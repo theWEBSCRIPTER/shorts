@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 650px;
+  background: #111;
+}
+.box{
+  width:0;
+  height:0;
+  transform-style:preserve-3d;
+  transform: perspective(1000px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate{
+  to{
+    transform: perspective(1000px)
+    rotateX(720deg)
+    rotateY(-360deg);
+  }
+}
+.box .face{
+  position:absolute;
+  background:linear-gradient(45deg,#0009,#444);
+  border: 1px solid #fff;
+  width:100px;
+  height:100px;
+  transform-origin:center;
+  box-shadow: 0 0 2px #fff,
+  0 0 5px #fff,
+  0 0 10px cyan;
+}
+.box .face.top{
+  transform: rotateX(90deg) translate3d(0,0,50px)
+}
+.box .face.bottom{
+  transform: rotateX(-90deg) translate3d(0,0,50px)
+}
+.box .face.left{
+  transform: rotateY(90deg) translate3d(0,0,50px)
+}
+.box .face.right{
+  transform: rotateY(-90deg) translate3d(0,0,50px)
+}
+.box .face.front{
+  transform: rotateX(0deg) translate3d(0,0,50px)
+}
+.box .face.back{
+  transform: rotateX(180deg) translate3d(0,0,50px)
+}
