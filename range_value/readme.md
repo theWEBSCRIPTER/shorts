@@ -1,2 +1,2 @@
 ## Range Value Display using JS
-> See the result [Here](https://thewebscripter.github.io/shorts/)
+> See the result [Here](https://thewebscripter.github.io/shorts/range_value/)
