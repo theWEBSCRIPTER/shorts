@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+body{
+  display: flex;
+}
+table {
+  width: 400px;
+  margin: 15px;
+  border-spacing: 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+tr th,td{
+  padding: 20px 7px;
+}
+tr:not(:last-child) td{
+  border-bottom: 1px solid #ddd;
+}
+th {
+  color: #fff;
+  background: #4daf2c;
+  text-align: left;
+}
+tr:nth-child(odd) td {
+  background: #eee;
+}
